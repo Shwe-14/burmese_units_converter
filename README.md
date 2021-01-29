@@ -1,4 +1,4 @@
-# burmese_unit_converter
+# burmese_units_converter
 
 Flutter App to convert units such as weight or height from Metric or Imperial to Burmese Units and vice versa.
 
