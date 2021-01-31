@@ -23,73 +23,73 @@ class MerticToMetric {
 
   //millimeter to centimeter
   double mmTocm(double millimeter) {
-    cm = millimeter * 10;
+    cm = millimeter / 10;
     return cm;
   }
 
   //millimeter to meter
   double mmTom(double millimeter) {
-    m = millimeter * 1000;
+    m = millimeter / 1000;
     return m;
   }
 
   //millimeter to kilometer
   double mmTokm(double millimeter) {
-    km = millimeter * 1000000;
+    km = millimeter / 1000000;
     return km;
   }
 
   //centimeter to millimeter
   double cmTomm(double centimeter) {
-    mm = centimeter / 10;
+    mm = centimeter * 10;
     return mm;
   }
 
   //centimeter to meter
   double cmTom(double centimeter) {
-    m = centimeter * 100;
+    m = centimeter / 100;
     return m;
   }
 
   //centimeter to kilometer
   double cmTokm(double centimeter) {
-    km = centimeter * 100000;
+    km = centimeter / 100000;
     return km;
   }
 
   //meter to millimeter
   double mTomm(double meter) {
-    mm = meter / 1000;
+    mm = meter * 1000;
     return mm;
   }
 
   //meter to centimeter
   double mTocm(double meter) {
-    cm = meter / 100;
+    cm = meter * 100;
     return cm;
   }
 
   //meter to kilometer
   double mTokm(double meter) {
-    km = meter * 1000;
+    km = meter / 1000;
     return km;
   }
 
   //kilometer to millimeter
   double kmTomm(double kilometer) {
-    mm = kilometer / 1000000;
+    mm = kilometer * 1000000;
     return mm;
   }
 
   //kilometer to centimeter
-  double kmTocm(double meter) {
-    cm = m / 100;
+  double kmTocm(double kilometer) {
+    cm = kilometer * 100000;
     return cm;
   }
 
   //kilometer to meter
   double kmTom(double kilometer) {
-    m = kilometer / 1000;
+    m = kilometer * 1000;
     return m;
   }
 
@@ -97,14 +97,14 @@ class MerticToMetric {
 
   //milliLiter to liter
   double mLToliter(double milliLiter) {
-    liter = milliLiter * 1000;
+    liter = milliLiter / 1000;
     return liter;
   }
 
   //liter to milliLiter
   // ignore: non_constant_identifier_names
   double literTomL(double Liter) {
-    mL = Liter / 1000;
+    mL = Liter * 1000;
     return mL;
   }
 
@@ -142,7 +142,7 @@ class MerticToMetric {
 
   //kilogram to gram
   double kgTog(double kilogram) {
-    g = kilogram / 1000;
+    g = kilogram * 1000;
     return g;
   }
 
@@ -172,95 +172,104 @@ class MerticToMetric {
     return km2;
   }
 
-  //Error//
-  //Note:need to classify equation(Start here)
   //centimeterSquare to millimeterSquare
-  double cm2Tocm2(double centimeterSquare) {
-    cm2 = centimeterSquare;
-    return cm2;
+  double cm2Tomm2(double centimeterSquare) {
+    mm2 = centimeterSquare / 100;
+    return mm2;
   }
 
   //centimeterSquare to meterSquare
   double cm2Tom2(double centimeterSquare) {
-    m2 = centimeterSquare;
+    m2 = centimeterSquare * 0.0001;
     return m2;
   }
 
   //centimererSquare to hactre
   double cm2ToHa(double centimeterSquare) {
-    ha = centimeterSquare;
+    ha = centimeterSquare * 0.00000001;
     return ha;
   }
 
   //centimeterSquare to kilometerSquare
   double cm2Tokm2(double centimeterSquare) {
-    km2 = centimeterSquare;
+    km2 = centimeterSquare * 0.0000000001;
     return km2;
   }
 
   //meterSquare to millimeterSquare
   double m2Tomm2(double meterSquare) {
-    mm2 = meterSquare;
+    mm2 = meterSquare / 1000000;
     return mm2;
   }
 
   //meterSquare to centimeterSquare
   double m2Tocm2(double meterSquare) {
-    cm2 = meterSquare;
+    cm2 = meterSquare / 10000;
     return cm2;
   }
 
   //meterSquare to hacter
+  double m2Toha(double meterSquare) {
+    ha = meterSquare * 10000;
+    return ha;
+  }
+
   //meterSquare to kilometerSquare
+  double m2Tokm2(double meterSquare) {
+    km2 = meterSquare * 1000000;
+    return km2;
+  }
+
   //hacter to millimeterSquare
   double ha2Tomm2(double hactre) {
-    mm2 = hactre;
+    mm2 = hactre / 10000000000;
     return mm2;
   }
 
   //hacter to centimeterSquare
   double ha2Tocm2(double hactre) {
-    cm2 = hactre;
+    cm2 = hactre / 100000000;
     return cm2;
   }
 
   //hacter to meterSquare
   double ha2Tom2(double hactre) {
-    m2 = hactre;
+    m2 = hactre / 10000;
     return m2;
   }
 
   //hacter to kilometerSquare
   double ha2Tokm2(double hactre) {
-    km2 = hactre;
+    km2 = hactre * 100;
     return km2;
   }
 
   //kilometerSquare to millimeterSquare
   double km2Tomm2(double kilometerSquare) {
-    mm2 = kilometerSquare;
+    mm2 = kilometerSquare / 1000000000000;
     return mm2;
   }
 
   //kilometerSquare to centimeterSquare
-  double km2Tocm2(double centimeterSquare) {
-    cm2 = centimeterSquare;
+  double km2Tocm2(double kilometerSquare) {
+    cm2 = kilometerSquare / 10000000000;
     return cm2;
   }
 
   //kilometerSquare to meterSquare
   double km2Tom2(double kilometerSquare) {
-    m2 = kilometerSquare;
+    m2 = kilometerSquare / 1000000;
     return m2;
   }
 
   //kilometerSquare to hactre
-  double km2ToHa(double kilometerSquare) {
-    ha = kilometerSquare;
+  double km2Toha(double kilometerSquare) {
+    ha = kilometerSquare / 100;
     return ha;
   }
-  //Error ends here//
 }
+
+//answer checked for above equations
 
 //Metric to Imperal
 class MetricToImperal {
@@ -361,13 +370,13 @@ class MetricToImperal {
 
   //meter to inch
   double mToinch(double meter) {
-    inch = meter / 0.254;
+    inch = meter / 0.0254;
     return inch;
   }
 
   //meter to foot
   double mToft(double meter) {
-    ft = meter / 3.048;
+    ft = meter / 0.3048;
     return ft;
   }
 
@@ -391,7 +400,7 @@ class MetricToImperal {
 
   //kilometer to foot
   double kmToft(double kilometer) {
-    ft = kilometer / 0.3048;
+    ft = kilometer / 0.0003048;
     return ft;
   }
 
