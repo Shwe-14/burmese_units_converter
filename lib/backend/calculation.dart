@@ -225,6 +225,7 @@ class MerticToMetric {
     mm2 = hactre / 10000000000;
     return mm2;
   }
+<<<<<<< HEAD
 
   //hacter to centimeterSquare
   double ha2Tocm2(double hactre) {
@@ -318,6 +319,101 @@ class MetricToImperal {
   double a; //acre
   double mi2; //square mile
 
+=======
+
+  //hacter to centimeterSquare
+  double ha2Tocm2(double hactre) {
+    cm2 = hactre / 100000000;
+    return cm2;
+  }
+
+  //hacter to meterSquare
+  double ha2Tom2(double hactre) {
+    m2 = hactre / 10000;
+    return m2;
+  }
+
+  //hacter to kilometerSquare
+  double ha2Tokm2(double hactre) {
+    km2 = hactre * 100;
+    return km2;
+  }
+
+  //kilometerSquare to millimeterSquare
+  double km2Tomm2(double kilometerSquare) {
+    mm2 = kilometerSquare / 1000000000000;
+    return mm2;
+  }
+
+  //kilometerSquare to centimeterSquare
+  double km2Tocm2(double kilometerSquare) {
+    cm2 = kilometerSquare / 10000000000;
+    return cm2;
+  }
+
+  //kilometerSquare to meterSquare
+  double km2Tom2(double kilometerSquare) {
+    m2 = kilometerSquare / 1000000;
+    return m2;
+  }
+
+  //kilometerSquare to hactre
+  double km2Toha(double kilometerSquare) {
+    ha = kilometerSquare / 100;
+    return ha;
+  }
+}
+
+//answer checked for above equations
+
+//Metric to Imperal
+class MetricToImperal {
+//Length
+  //Metric units
+  double mm;
+  double cm;
+  double m;
+  double km;
+  //Imperal units
+  double inch; //inch
+  double ft; //feet
+  double yd; //yard
+  double mi; //mile
+//Volume
+  //Metric units
+  double mL; //milli liter
+  double liter;
+  //Imperal units
+  double flOz; //fluid ounce
+  double pints;
+  double qt; //quart
+  double gallon;
+
+//Mass
+  //Metric units
+  double mg;
+  double g;
+  double kg;
+  //Imperal units
+  double grain;
+  double oz; //ounce
+  double lb; //pound
+
+//Area
+  //Metric units
+  double mm2;
+  double cm2;
+  double m2;
+  double ha;
+  double km2;
+  //Imperal Units
+  double in2; //inches square
+  double sqft; //square feet
+  double yd2; //yard square
+  double a; //area
+  double mi2; //square mile
+
+>>>>>>> kyaw_myo_khant
   ///////////////*Change length*///////////////////
 
   //millimeter to inch
@@ -370,13 +466,21 @@ class MetricToImperal {
 
   //meter to inch
   double mToinch(double meter) {
+<<<<<<< HEAD
     inch = meter * 39.3701;
+=======
+    inch = meter / 0.0254;
+>>>>>>> kyaw_myo_khant
     return inch;
   }
 
   //meter to foot
   double mToft(double meter) {
+<<<<<<< HEAD
     ft = meter * 3.28084;
+=======
+    ft = meter / 0.3048;
+>>>>>>> kyaw_myo_khant
     return ft;
   }
 
@@ -400,7 +504,11 @@ class MetricToImperal {
 
   //kilometer to foot
   double kmToft(double kilometer) {
+<<<<<<< HEAD
     ft = kilometer * 3280.84;
+=======
+    ft = kilometer / 0.0003048;
+>>>>>>> kyaw_myo_khant
     return ft;
   }
 
@@ -417,15 +525,24 @@ class MetricToImperal {
   }
 
   /////////////////*Change Volume*///////////////
+<<<<<<< HEAD
 
   //milliLiter to fluid ounce
   double mLToflOz(double milliLiter) {
     flOz = milliLiter * 0.0338;
+=======
+  //Error//
+  //Note:need to classify equation(Start here)
+  //milliLiter to fluid ounce
+  double mLToflOz(double milliLiter) {
+    flOz = milliLiter;
+>>>>>>> kyaw_myo_khant
     return flOz;
   }
 
   //milliLiter to pints
   double mLToPints(double milliLiter) {
+<<<<<<< HEAD
     pints = milliLiter * 0.00176;
     return pints;
   }
@@ -1067,5 +1184,251 @@ class ImperalToMetric {
   double mi2Tokm2(double mileSquare) {
     km2 = mileSquare * 1.0000E+10; //square kilometer
     return km2;
+=======
+    pints = milliLiter;
+    return pints;
+  }
+
+  //milliLiter to quart
+  double mLToQt(double milliLiter) {
+    qt = milliLiter;
+    return qt;
+  }
+
+  //milliLiter to gallon
+  double mLToGallon(double milliLiter) {
+    gallon = milliLiter;
+    return gallon;
+  }
+
+  //Liter to fluid ounce
+  double literToflOz(double liter) {
+    flOz = liter;
+    return flOz;
+  }
+
+  //Liter to pints
+  double literToPints(double liter) {
+    pints = liter;
+    return pints;
+  }
+
+  //Liter to quart
+  double literToQt(double liter) {
+    qt = liter;
+    return qt;
+  }
+
+  //Liter to gallon
+  double literToGallon(double liter) {
+    gallon = liter;
+    return gallon;
+  }
+
+  /////////////////*Change Mass*/////////////////
+  //milligram to grain
+  double mgToGrain(double milligram) {
+    grain = milligram;
+    return grain;
+  }
+
+  //milligram to ounce
+  double mgToOz(double milligram) {
+    oz = milligram;
+    return oz;
+  }
+
+  //milligram to pound
+  double mgToLb(double milligram) {
+    lb = milligram;
+    return lb;
+  }
+
+  //gram to grain
+  double gToGrain(double gram) {
+    grain = gram;
+    return grain;
+  }
+
+  //gram to ounce
+  double gToOz(double gram) {
+    oz = gram;
+    return oz;
+  }
+
+  //gram to pound
+  double gToLb(double gram) {
+    lb = gram;
+    return lb;
+  }
+
+  //kilogram to grain
+  double kgToGrain(double kilogram) {
+    grain = kilogram;
+    return grain;
+  }
+
+  //kilogram to ounce
+  double kgToOz(double kilogram) {
+    oz = kilogram;
+    return oz;
+  }
+
+  //kilogram to pound
+  double kgToLb(double kilogram) {
+    lb = kilogram;
+    return lb;
+  }
+
+  /////////////////*Change Area*/////////////////
+  //millimeterSquare to inchesSquare
+  double mm2Toin2(double millimeterSquare) {
+    in2 = millimeterSquare;
+    return in2;
+  }
+
+  //millimeterSquare to square feet
+  double mm2Toft2(double millimeterSquare) {
+    in2 = millimeterSquare;
+    return in2;
+  }
+
+  //millimeterSquare to yard square
+  double mm2Toyd2(double millimeterSquare) {
+    yd2 = millimeterSquare;
+    return yd2;
+  }
+
+  //millimeterSquare to area
+  double mm2ToA(double millimeterSquare) {
+    a = millimeterSquare;
+    return a;
+  }
+
+  //millimeterSquare to square mile
+  double mm2ToMi2(double millimeterSquare) {
+    mi2 = millimeterSquare;
+    return mi2;
+  }
+
+  //centimeterSquare to inchesSquare
+  double cm2Toin2(double centimeterSquare) {
+    in2 = centimeterSquare;
+    return in2;
+  }
+
+  //centimeterSquare to square feet
+  double cm2Toft2(double centimeterSquare) {
+    in2 = centimeterSquare;
+    return in2;
+  }
+
+  //centimeterSquare to yard square
+  double cm2Toyd2(double centimeterSquare) {
+    yd2 = centimeterSquare;
+    return yd2;
+  }
+
+  //centimeterSquare to area
+  double cm2ToA(double centimeterSquare) {
+    a = centimeterSquare;
+    return a;
+  }
+
+  //centimeterSquare to square mile
+  double cm2ToMi2(double centimeterSquare) {
+    mi2 = centimeterSquare;
+    return mi2;
+  }
+
+  //meterSquare to inchesSquare
+  double m2Toin2(double meterSquare) {
+    in2 = meterSquare;
+    return in2;
+  }
+
+  //meterSquare to square feet
+  double m2Toft2(double meterSquare) {
+    in2 = meterSquare;
+    return in2;
+  }
+
+  //meterSquare to yard square
+  double m2Toyd2(double meterSquare) {
+    yd2 = meterSquare;
+    return yd2;
+  }
+
+  //meterSquare to area
+  double m2ToA(double meterSquare) {
+    a = meterSquare;
+    return a;
+  }
+
+  //meterSquare to square mile
+  double m2ToMi2(double meterSquare) {
+    mi2 = meterSquare;
+    return mi2;
+  }
+
+  //hactre to inchesSquare
+  double haToin2(double hactre) {
+    in2 = hactre;
+    return in2;
+  }
+
+  //hactre to square feet
+  double haToft2(double hactre) {
+    in2 = hactre;
+    return in2;
+  }
+
+  //hactre to yard square
+  double ha2Toyd2(double hactre) {
+    yd2 = hactre;
+    return yd2;
+  }
+
+  //hactre to area
+  double ha2ToA(double hactre) {
+    a = hactre;
+    return a;
+  }
+
+  //hactre to square mile
+  double ha2ToMi2(double hactre) {
+    mi2 = hactre;
+    return mi2;
+  }
+
+  //kilometerSquare to inchesSquare
+  double km2Toin2(double kilometerSquare) {
+    in2 = kilometerSquare;
+    return in2;
+  }
+
+  //kilometerSquare to square feet
+  double km2Toft2(double kilometerSquare) {
+    in2 = kilometerSquare;
+    return in2;
+  }
+
+  //kilometerSquare to yard square
+  double km2Toyd2(double kilometerSquare) {
+    yd2 = kilometerSquare;
+    return yd2;
+  }
+
+  //kilometerSquare to area
+  double km2ToA(double kilometerSquare) {
+    a = kilometerSquare;
+    return a;
+  }
+
+  //kilometerSquare to square mile
+  double km2ToMi2(double kilometerSquare) {
+    mi2 = kilometerSquare;
+    return mi2;
+>>>>>>> kyaw_myo_khant
   }
 }
